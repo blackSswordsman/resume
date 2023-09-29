@@ -1,22 +1,15 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 12px;
-    max-width: 960px;
-    margin: auto;
-    background-color: #121212;
-    color: #ffffff;
-}
-.switcher{
+
+/* .switcher{
     position:absolute;
     padding: 10px;
     top: 0;
     right: 0;
-}
+} */
 .container .content{
     display: none;
 }
 .container .content.contentEnglish{
-display: block;
+    display: block;
 }
 .check{
     position: relative;
@@ -48,6 +41,21 @@ display: block;
 .check:checked:after{
     left: 25px;
     border: 2px solid #00a1ff;
+}
+.check:checked ~ .content.contentEnglish{
+    display: none;
+}
+.check:checked ~ .content.contentRussian{
+    display: block;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    max-width: 960px;
+    margin: auto;
+    background-color: #121212;
+    color: #ffffff;
+    overflow: hidden;
 }
 .ru{
     color: #5F9EA0;
