@@ -6,6 +6,52 @@ body {
     background-color: #121212;
     color: #ffffff;
 }
+.switcher{
+    position:absolute;
+    padding: 10px;
+    top: 0;
+    right: 0;
+}
+.container .content{
+    display: none;
+}
+.container .content.contentEnglish{
+display: block;
+}
+.check{
+    position: relative;
+    width: 50px;
+}
+.check:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #333;
+    border-radius: 25px;
+}
+.check:checked:before{
+    background: #00a1ff;
+}
+.check:after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+.check:checked:after{
+    left: 25px;
+    border: 2px solid #00a1ff;
+}
+.ru{
+    color: #5F9EA0;
+}
 h1 {
     font-size: 3em;
     letter-spacing: .6em;
